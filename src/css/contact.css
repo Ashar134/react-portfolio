@@ -1,0 +1,237 @@
+   /* Contact Me Section */
+   .contact-me {
+       min-height: 100vh;
+       /* full screen height */
+       width: 100vw;
+       /* full screen width */
+       background: black;
+       /* or any background color you like */
+       color: white;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 2rem;
+       box-sizing: border-box;
+   }
+
+   .contact-container {
+       text-align: center;
+       max-width: 600px;
+       width: 100%;
+   }
+
+
+   .name-center h1 {
+       font-size: 3rem;
+       font-weight: 400;
+       color: white;
+       margin-bottom: 1.5rem;
+   }
+
+   .name-center p {
+       color: rgba(255, 255, 255, 0.801);
+       text-align: center;
+       margin-bottom: 100px;
+
+   }
+
+   .email-button {
+       display: inline-block;
+       background: black;
+       border: 1px solid rgba(255, 255, 255, 0.247);
+       color: #ffffff;
+       padding: 1rem 2rem;
+       border-radius: 50px;
+       text-decoration: none;
+       font-size: 1.1rem;
+       font-weight: 400;
+       margin-bottom: 2rem;
+       transition: transform 0.3s ease, box-shadow 0.3s ease;
+   }
+
+   .email-button:hover {
+       transform: translateY(-3px);
+       box-shadow: 0 4px 12px rgba(147, 51, 234, 0.3);
+       background-color: white;
+       border: 1px solid rgba(0, 0, 0, 0.247);
+
+       color: black;
+   }
+
+   .availability {
+       display: flex;
+       align-items: center;
+       gap: 1.5rem;
+       justify-content: center;
+   }
+
+   .availability .icon {
+       font-size: 2rem;
+       color: #ffffff;
+   }
+
+   .availability-text strong {
+       font-size: 1.3rem;
+       color: #ffffff;
+       font-weight: 500;
+   }
+
+   .availability-text p {
+       font-size: 1.1rem;
+       color: rgba(255, 255, 255, 0.39);
+   }
+
+
+
+
+   /* Responsive Design */
+   @media (max-width: 768px) {
+       header {
+           flex-direction: column;
+           gap: 1.5rem;
+           padding: 1.5rem 2rem;
+       }
+
+       .header-left {
+           flex-direction: row;
+
+           text-align: center;
+       }
+
+       .name {
+           font-size: 1.5rem;
+       }
+
+       .card {
+           margin: 1.5rem;
+           padding: 2rem;
+       }
+
+       .profile img {
+           width: 140px;
+           height: 140px;
+       }
+
+       .intro {
+           font-size: 1.2rem;
+       }
+
+       .projects-section h2,
+       .certificate-section h2,
+       .find-me h2 {
+           font-size: 2rem;
+       }
+
+       .project {
+           grid-template-columns: 1fr;
+       }
+
+       .block-content {
+           grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+       }
+
+       .skill-logo img {
+           width: 50px;
+           height: 50px;
+       }
+
+       .education-block {
+           flex-direction: column;
+           text-align: center;
+           padding: 1.5rem;
+       }
+
+       .edu-icon img {
+           margin-right: 0;
+           margin-bottom: 1.5rem;
+       }
+
+       .name-center h1 {
+           font-size: 2.5rem;
+       }
+
+       .email-button {
+           padding: 0.8rem 1.5rem;
+           font-size: 1rem;
+       }
+   }
+
+   @media (max-width: 480px) {
+
+       .name {
+           font-size: 1.3rem;
+
+       }
+
+       .available-badge,
+       .email-btn,
+       .email-button {
+           padding: 0.6rem 1.2rem;
+           font-size: 0.85rem;
+       }
+
+       .card {
+           margin: 1rem;
+           padding: 1.5rem;
+       }
+
+       .profile img {
+           width: 120px;
+           height: 120px;
+       }
+
+       .intro {
+           font-size: 1.2rem;
+       }
+
+       .certificate-grid {
+           grid-template-columns: 1fr;
+       }
+
+       .social-links {
+           flex-direction: column;
+           align-items: center;
+       }
+
+       .name-center h1 {
+           font-size: 2rem;
+       }
+   }
+
+
+   @media (max-width: 768px) {
+
+       .block-content-language,
+       .soft-skills-wrapper {
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+           gap: 0.8rem 1rem;
+       }
+
+       .block-content-language p,
+       .soft-skills-wrapper p {
+           white-space: normal;
+           text-align: start;
+       }
+
+       .block-label-language,
+       .block-label-skill,
+       .block-label-soft-skill,
+       .block-label div {
+
+           text-align: center;
+
+       }
+
+       header {
+
+           flex-direction: row;
+       }
+
+   }
+
+   @media (max-width: 768px) {
+       .intro {
+           font-size: 1.2rem;
+       }
+   }

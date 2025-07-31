@@ -1,0 +1,234 @@
+/* Projects Section */
+.projects-section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    margin-bottom: 3rem;
+    background: black;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.project-item {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1.8rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+}
+
+.project-date {
+    font-size: 0.9rem;
+    color: #6b7280;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.project-icon {
+    font-size: 1.8rem;
+    color: #2563eb;
+}
+
+.project-content h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 0.5rem;
+}
+
+.project-name,
+.location {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.project-content p {
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+
+
+
+.project-icon img {
+    width: 50px; /* Adjusted to make the image smaller */
+    height: 50px;
+    object-fit: contain;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem 2rem;
+    }
+
+    .header-left {
+        flex-direction: row;
+
+        text-align: center;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        margin: 1.5rem;
+        padding: 2rem;
+    }
+
+    .profile img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .intro {
+        font-size: 1.2rem;
+    }
+
+    .projects-section h2,
+    .certificate-section h2,
+    .find-me h2 {
+        font-size: 2rem;
+    }
+
+    .project {
+        grid-template-columns: 1fr;
+    }
+
+    .block-content {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    }
+
+    .skill-logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .education-block {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .edu-icon img {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .name-center h1 {
+        font-size: 2.5rem;
+    }
+
+    .email-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .name {
+        font-size: 1.3rem;
+
+    }
+
+    .available-badge,
+    .email-btn,
+    .email-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    .card {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .profile img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .intro {
+        font-size: 1.2rem;
+    }
+
+    .certificate-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name-center h1 {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .block-content-language,
+    .soft-skills-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem 1rem;
+    }
+
+    .block-content-language p,
+    .soft-skills-wrapper p {
+        white-space: normal;
+        text-align: start;
+    }
+
+    .block-label-language,
+    .block-label-skill,
+    .block-label-soft-skill,
+    .block-label div {
+
+        text-align: center;
+
+    }
+
+    header {
+
+        flex-direction: row;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .intro {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,10 @@
+  /* Footer Section */
+  .footer {
+      background: linear-gradient(to top, #111, #000);
+      color: #ccc;
+
+      font-size: 13px;
+      padding: 1.5rem;
+      text-align: center;
+      border-top: 1px solid #333;
+  }

@@ -1,0 +1,264 @@
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.name {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #272727;
+    letter-spacing: 1px;
+    background: black;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.available-badge {
+    background: #f5ee62;
+    color: black;
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.available-badge:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(126, 185, 16, 0.411);
+}
+
+/* Card Section */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+.profile img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 14px 22px #1f1f1f09;
+
+}
+
+/* intro */
+.intro {
+
+    font-size: 37px;
+    text-align: center;
+    max-width: 800px;
+    color: #000000;
+    font-weight: 350;
+    letter-spacing: 0.5px;
+    line-height: 1.4cm;
+}
+
+
+
+#typed-text::after {
+    content: "|";
+    animation: blink 1s infinite;
+    color: black;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem 2rem;
+    }
+
+    .header-left {
+        flex-direction: row;
+
+        text-align: center;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        margin: 1.5rem;
+        padding: 2rem;
+    }
+
+    .profile img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .intro {
+        font-size: 1.2rem;
+    }
+
+    .projects-section h2,
+    .certificate-section h2,
+    .find-me h2 {
+        font-size: 2rem;
+    }
+
+    .project {
+        grid-template-columns: 1fr;
+    }
+
+    .block-content {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    }
+
+    .skill-logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .education-block {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .edu-icon img {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .name-center h1 {
+        font-size: 2.5rem;
+    }
+
+    .email-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .name {
+        font-size: 1.3rem;
+
+    }
+
+    .available-badge,
+    .email-btn,
+    .email-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    .card {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .profile img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .intro {
+        font-size: 1.2rem;
+    }
+
+    .certificate-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name-center h1 {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .block-content-language,
+    .soft-skills-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem 1rem;
+    }
+
+    .block-content-language p,
+    .soft-skills-wrapper p {
+        white-space: normal;
+        text-align: start;
+    }
+
+    .block-label-language,
+    .block-label-skill,
+    .block-label-soft-skill,
+    .block-label div {
+
+        text-align: center;
+
+    }
+
+    header {
+
+        flex-direction: row;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .intro {
+        font-size: 1.2rem;
+    }
+}
