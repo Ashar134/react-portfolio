@@ -2,7 +2,7 @@
   "name": "ashar-naveed-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ashar134.github.io/react-portfolio/",
+  "homepage": "https://react-portfolio-drl9wg6bp-ashars-projects-6227b13d.vercel.app/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
