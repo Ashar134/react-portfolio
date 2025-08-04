@@ -21,7 +21,6 @@ root.render(
     <CertificateSection />
     <Contact />
     <Footer />
-   <SpeedInsights />
   </React.StrictMode>
 );
 
