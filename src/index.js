@@ -8,6 +8,8 @@ import CertificateSection from './components/CertificateSection ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import reportWebVitals from './reportWebVitals';
+import { SpeedInsights } from "@vercel/speed-insights/react"
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
