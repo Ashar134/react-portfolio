@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import reportWebVitals from './reportWebVitals';
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from '@vercel/analytics/react'
 
 
 
@@ -21,6 +22,8 @@ root.render(
     <CertificateSection />
     <Contact />
     <Footer />
+    <SpeedInsights />
+    <Analytics />
   </React.StrictMode>
 );
 
